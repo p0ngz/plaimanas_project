@@ -6,6 +6,12 @@
   background-color: var(--color-white);
 }
 
+.navbar-wrapper > .navbar-brand {
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
 .navbar {
   width: 100%;
   height: var(--navbar-height);
