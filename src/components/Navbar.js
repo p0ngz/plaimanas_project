@@ -11,8 +11,7 @@ function Navbar() {
   const nav = document.createElement("nav");
   nav.className = "navbar";
 
-  
-  nav.innerHTML = /* html */`
+  nav.innerHTML = /* html */ `
     <div class="navbar-left">
       <div class="navbar-language">
         <span class="navbar-text">${navbarLanguage[0].label.toUpperCase()}</span>
@@ -53,7 +52,7 @@ function Navbar() {
                 </div>
                 <div class="navbar-sublinks">${sublinks}</div>
               </div>`;
-            }`1`
+            }
             return `<a href="${item.link}" class="navbar-submenu-link">${item.label.toUpperCase()}</a>`;
           })
           .join("")}
@@ -101,9 +100,34 @@ function Navbar() {
   wrapper.appendChild(nav);
   wrapper.appendChild(brandBar);
 
-  // Event: toggle language dropdown
+  // choose language selector
   const languageBtn = nav.querySelector(".navbar-language");
   const dropdownMenu = nav.querySelector(".navbar-dropdown-menu");
+  const languageText = nav.querySelector(".navbar-language > .navbar-text");
+  let currentLang = navbarLanguage[0].value;
+
+  function renderDropdownItems() {
+    dropdownMenu.innerHTML = navbarLanguage
+      .filter((item) => item.value !== currentLang)
+      .map(
+        (item) =>
+          `<div class="navbar-dropdown-item" data-value="${item.value}">${item.label.toUpperCase()}</div>`,
+      )
+      .join("");
+
+    dropdownMenu.querySelectorAll(".navbar-dropdown-item").forEach((el) => {
+      el.addEventListener("click", (e) => {
+        e.stopPropagation();
+        currentLang = el.dataset.value;
+        const selected = navbarLanguage.find((l) => l.value === currentLang);
+        languageText.textContent = selected.label.toUpperCase();
+        dropdownMenu.classList.remove("active");
+        renderDropdownItems();
+      });
+    });
+  }
+
+  renderDropdownItems();
 
   languageBtn.addEventListener("click", () => {
     dropdownMenu.classList.toggle("active");

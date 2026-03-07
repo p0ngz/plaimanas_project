@@ -318,10 +318,19 @@
     transition: var(--transition-fast);
   }
 
-  .navbar-submenu-link:hover {
+  .navbar-submenu-link-thick {
+    font-size: var(--navbar-text-size);
+    font-weight: var(--font-weight-regular);
+  }
+
+  .navbar-submenu-link:hover,
+  .navbar-submenu-link-thick:hover {
     font-size: var(--navbar-submenu-size-desktop);
     font-weight: var(--font-weight-bold);
+  }
 
+  .navbar-sublinks.active {
+    display: none;
   }
 
   /* Desktop: submenu group hover */
