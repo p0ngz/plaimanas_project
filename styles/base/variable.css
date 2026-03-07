@@ -1,0 +1,154 @@
+/* ================================
+   PLAIMANAS PROJECT - CSS VARIABLES
+   Based on mobile.txt and desktop.txt specifications
+   Best Practice: Mobile First Approach with Single Variable Names
+   ================================ */
+
+:root {
+  /* ===== Font Family ===== */
+  --font-family: "Hanken Grotesk", sans-serif;
+  
+  /* ===== Colors ===== */
+  --color-primary: #000000;
+  --color-white: #FFFFFF;
+  --color-border: #000000;
+  
+  /* ===== Breakpoints ===== */
+  --breakpoint-mobile: 390px;
+  --breakpoint-desktop: 1440px;
+  
+  /* ===== Font Weights ===== */
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+  --font-weight-extra-bold: 800;
+  --font-weight-black: 900;
+  
+  
+  /* ===== MOBILE FIRST (390px) ===== */
+  
+  /* Container */
+  --padding: 8px;
+  
+  /* Navbar */
+  --navbar-height: 45px;
+  --navbar-border: 1px solid var(--color-border);
+  --navbar-padding: 0;
+  --navbar-gap: 0;
+  --navbar-text-size: 13px;
+  --navbar-text-padding: 10px;
+  --navbar-submenu-size: 24px;
+  --navbar-submenu-weight: var(--font-weight-bold);
+  --navbar-icon-size: 17px;
+  --navbar-icon-box: 20px;
+  --navbar-left-box-width: 71px;
+  --navbar-left-box-height: 16px;
+  --navbar-right-box-width: 86px;
+  --navbar-right-box-height: 36px;
+  --navbar-right-padding: 10px;
+  
+  /* Hero Section */
+  --hero-height: 713px;
+  
+  /* New Section */
+  --new-card-width: 282px;
+  --new-card-height: 286px;
+  --new-card-text-size: 40px;
+  --new-card-text-weight: var(--font-weight-black);
+  --new-textbox-width: 342px;
+  --new-textbox-min-height: 78px;
+  --new-textbox-align: left;
+  --new-header-size: 14px;
+  --new-header-weight: var(--font-weight-black);
+  --new-text-size: 12px;
+  --new-text-weight: var(--font-weight-regular);
+  
+  /* Best Seller Section */
+  --bestseller-card-width: 346px;
+  --bestseller-card-height: 219px;
+  --bestseller-card-text-size: 40px;
+  --bestseller-card-text-weight: var(--font-weight-black);
+  --bestseller-textbox-width: 346px;
+  --bestseller-textbox-min-height: 78px;
+  --bestseller-header-size: 14px;
+  --bestseller-header-weight: var(--font-weight-black);
+  --bestseller-text-size: 12px;
+  --bestseller-text-weight: var(--font-weight-regular);
+  
+  /* Collection Section */
+  --collection-width: 346px;
+  --collection-min-height: 352px;
+  --collection-card1-width: 346px;
+  --collection-card1-height: 161px;
+  --collection-card23-size: 161px;
+  --collection-gap: 24px;
+  
+  /* Scrolling Text Section */
+  --scrolling-height: 85px;
+  --scrolling-text-size: 24px;
+  --scrolling-text-weight: var(--font-weight-extra-bold);
+  --scrolling-icon-size: 85px;
+  
+  /* ===== Spacing ===== */
+  --gap-xs: 4px;
+  --gap-sm: 8px;
+  --gap-md: 10px;
+  --gap-lg: 24px;
+  --gap-xl: 68px;
+  
+  /* ===== Transitions ===== */
+  --transition-fast: 150ms ease-in-out;
+  --transition-base: 250ms ease-in-out;
+  --transition-slow: 350ms ease-in-out;
+  
+  /* ===== Z-index ===== */
+  --z-navbar: 1000;
+  --z-modal: 1050;
+  --z-tooltip: 1100;
+}
+
+
+/* ===== DESKTOP RESPONSIVE (1440px) ===== */
+@media (min-width: 1440px) {
+  :root {
+    /* Container */
+    --padding: 16px;
+    
+    /* Navbar */
+    --navbar-padding: 8px;
+    --navbar-gap: 10px;
+    --navbar-text-padding: 10px;
+    
+    /* Hero Section */
+    --hero-height: 844px;
+    
+    /* New Section */
+    --new-card-width: 566px;
+    --new-card-height: 572px;
+    --new-card-text-size: 80px;
+    --new-textbox-width: 715px;
+    --new-textbox-align: center;
+    --new-header-size: 16px;
+    --new-text-size: 14px;
+    
+    /* Best Seller Section */
+    --bestseller-card-width: 1200px;
+    --bestseller-card-height: 759px;
+    --bestseller-card-text-size: 80px;
+    --bestseller-textbox-width: 346px;
+    --bestseller-header-size: 16px;
+    --bestseller-text-size: 14px;
+    
+    /* Collection Section */
+    --collection-width: 978px;
+    --collection-min-height: 352px;
+    --collection-card1-width: 978px;
+    --collection-card1-height: 455px;
+    --collection-card23-size: 455px;
+    --collection-gap: 68px;
+    
+    /* Scrolling Text Section */
+    --scrolling-text-size: 60px;
+    --scrolling-text-weight: var(--font-weight-black);
+    --scrolling-icon-size: 85px;
+  }
+}

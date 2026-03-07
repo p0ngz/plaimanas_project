@@ -1,0 +1,195 @@
+mobile:
+padding: 0 16
+navbar
+    padding: 0 8
+	width: 100%;
+	height: 45px;
+	border: 1px solid #000000
+	left:
+		box:
+			width: 71px;
+			height: 16px;
+			box-text:
+				width: 55px;
+				height: 15px;
+			polygon:
+				width: 7px;
+				height: 5px;
+				rotation: -180 (optional)
+	
+	center:
+        padding: 10px
+        gap: 10px;
+		text:
+            font-size: 13px;
+	right: 
+		width: 86px;
+		height: 36px
+		box-text:
+			padding: 10px;
+		icon:
+			width: 17px;
+			height: 17px;
+
+Hero Section:
+	width: 100%;
+	height: 844px;
+
+
+New Section:
+	card:
+		width: 566px;
+		height: 572px;
+        text: 
+            font-size: 80px;
+            font-weigth: 900px;
+	text-box:
+		width: 715px;
+		min-height: auto;
+        text-align: center
+		header-text:
+			font-size: 16px;
+			font-weight: 900
+		normal-text:
+			font-size: 14px;
+            font-weight: 400
+
+
+Best Seller Section:
+	card:
+		width: 1200px;
+		height: 759px;
+        text: 
+            	font-size: 80px;
+            	font-weight: 900px;
+	text-box:
+		width: 346px;
+		min-height: 78px;
+		header-text:
+			font-size: 16px;
+			font-weight: 900
+		normal-text:
+			font-size: 14px;
+            font-weight: 400
+
+
+Collection Section:
+	width: 978px;
+	min-height: 352px;
+	gap: 68px;
+	card1:
+		width: 978px | 100%
+		height: 455px;
+	card2, card3:
+		width: 455px
+		height: 455px;
+		
+	
+Scrolling Text Section:
+	min-width: 100%;
+	height: 85px;
+	text:
+		font-size: 60px;
+		font-weight: 900;
+		color: #FFFFFF;
+	icon (left arrow, right arrow ):
+		width: 85px;
+		height: 85px;
+
+Service Section:
+	width: 100%
+	min-height: 384px;
+	text-box:
+		width: 280px;
+		min-height: auto
+		gap: 14px
+		header-text:
+			font-size: 16px;
+			font-weight: 700;
+		text:
+			font-size: 14px;	
+
+
+Accordion Section
+	width: 100%;
+    padding: 150px 348px
+	min-height: 645px;
+    justify-center align0cenetr
+	first-box:	
+		width: 100%;
+		min-height: auto
+		header-text: 
+			font-size: 40px;
+			font-weight: 900
+		normal-text:
+			font-size: 14px;
+
+	second-box:
+		chip:
+            //min-width: 86px;
+            //height: 33px;
+			padding: 16 8
+			text:
+				font-size: 14px;
+                font-weight: 400
+			
+	third-box:
+		width: 100%;
+		height: auto;
+		gap: 24px;
+		box-1;
+			icon:
+				width: 14px;
+				height: 6px;
+				rotate 180;
+			header-text:
+				font-size: 16px;
+				font-weight: 700;
+			normal-text:
+				font-size: 14px;
+				font-weight: 400
+
+
+Inquiry Section:
+    width: 1092px;
+    height auto: 
+	first-box:
+		header-text: 
+			font-size: 40px;
+			font-weight: 900;
+		normal-text: 
+			font-size: 14px;
+			font-weight: 400px;
+			
+	second-box:
+		header-text: 
+			font-size: 40px;
+			font-weight: 900;
+		normal-text: 
+			font-size: 14px;
+			font-weight: 400px;
+		radio:
+			width: 18px;
+			height: 18px;
+		checkbox:
+			width: 18px;
+			height: 18px;
+		button:
+			width: 140px;
+			height: 52px;
+			text:
+				font-size: 16px;
+				font-weight: 400px;
+
+
+Footer Section:
+	text:
+		font-size: 14px;
+		font-weight: 400;
+	sub-text: 
+		font-size: 12px;
+		font-weight: 400;
+		
+	
+
+Desktop:
