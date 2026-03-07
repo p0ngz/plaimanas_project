@@ -4,7 +4,7 @@ import { navbarLanguage, navbarMenu } from "../../data/navbar.js";
  * Navbar Component
  * Uses innerHTML to render navbar from data/navbar.js
  */
-function Navbar() {
+function Navbar(brandBar) {
   const wrapper = document.createElement("div");
   wrapper.className = "navbar-wrapper";
 
@@ -58,7 +58,7 @@ function Navbar() {
           .join("")}
         </div>
         <div class="navbar-brand">
-          <svg class="navbar-brand-svg">
+            <svg class="navbar-brand-svg" preserveAspectRatio="none">
             <text class="navbar-brand-text">PLAIMANAS</text>
           </svg>
         </div>
@@ -76,29 +76,24 @@ function Navbar() {
     </div>
   `;
 
-  // Auto-fit viewBox to text bounds after font loads
-  document.fonts.ready.then(() => {
-    wrapper.querySelectorAll("svg text").forEach((text) => {
-      const svg = text.closest("svg"); // find closest svg ancestor
-      const bbox = text.getBBox(); // find size of text box
+  function fitBrandSvg(el) {
+    el.querySelectorAll(".navbar-brand-svg text").forEach((text) => {
+      const svg = text.closest("svg");
+      const bbox = text.getBBox();
+      const trimY = bbox.height * 0.1;
       svg.setAttribute(
         "viewBox",
-        `${bbox.x} ${bbox.y} ${bbox.width} ${bbox.height}`,
+        `${bbox.x} ${bbox.y + trimY} ${bbox.width} ${bbox.height - trimY * 2}`,
       );
     });
-  });
-
-  // Standalone brand bar (visible by default)
-  const brandBar = document.createElement("div");
-  brandBar.className = "navbar-brand";
-  brandBar.innerHTML = `
-    <svg class="navbar-brand-svg">
-      <text class="navbar-brand-text">PLAIMANAS</text>
-    </svg>
-  `;
+  }
 
   wrapper.appendChild(nav);
-  wrapper.appendChild(brandBar);
+
+  // Auto-fit viewBox for submenu brand after font loads
+  document.fonts.ready.then(() => {
+    fitBrandSvg(wrapper);
+  });
 
   // choose language selector
   const languageBtn = nav.querySelector(".navbar-language");
@@ -142,22 +137,31 @@ function Navbar() {
     submenu.classList.toggle("active");
     menuBtn.classList.toggle("active");
 
-    // Toggle brand bar visibility
     const isOpen = submenu.classList.contains("active");
-    brandBar.style.display = isOpen ? "none" : "";
+    if (brandBar) brandBar.style.display = isOpen ? "none" : "";
 
-    // Fit submenu brand SVG viewBox on first open
+    // Fit submenu brdna text to viewBox
     if (!brandFitted && isOpen) {
       const brandText = submenu.querySelector(".navbar-brand-text");
       if (brandText) {
         const svg = brandText.closest("svg");
         const bbox = brandText.getBBox();
+        const trimY = bbox.height * 0.1;
         svg.setAttribute(
           "viewBox",
-          `${bbox.x} ${bbox.y} ${bbox.width} ${bbox.height}`,
+          `${bbox.x} ${bbox.y + trimY} ${bbox.width} ${bbox.height - trimY * 2}`,
         );
         brandFitted = true;
       }
+    }
+  });
+
+  // Reset mobile menu state when resizing to desktop
+  window.addEventListener("resize", () => {
+    if (window.innerWidth >= 1440) {
+      submenu.classList.remove("active");
+      menuBtn.classList.remove("active");
+      if (brandBar) brandBar.style.display = "";
     }
   });
 

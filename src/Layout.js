@@ -1,18 +1,14 @@
 import createElement from "./utils/createElement.js";
 
-/**
- * Layout Component
- * Creates page structure: <header>, <main> with sections, <footer>
- */
 function Layout() {
   const layout = createElement("div", { class: "layout" });
 
-  // Header
+  // main component
   const header = createElement("header", { class: "layout-header" });
-
-  // Main with sections
   const main = createElement("main", { class: "layout-main" });
+  const footer = createElement("footer", { class: "layout-footer" });
 
+  // sub component for main
   const heroSection = createElement("section", { attrs: { id: "hero" } });
   const newSection = createElement("section", { attrs: { id: "new-section" } });
   const bestsellerSection = createElement("section", { attrs: { id: "bestseller-section" } });
@@ -32,7 +28,6 @@ function Layout() {
   main.appendChild(inquirySection);
 
   // Footer
-  const footer = createElement("footer", { class: "layout-footer" });
 
   // Assemble
   layout.appendChild(header);

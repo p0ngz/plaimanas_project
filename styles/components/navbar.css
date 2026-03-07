@@ -1,15 +1,7 @@
-/* Navbar Wrapper - sticks together */
+/* Navbar Wrapper */
 .navbar-wrapper {
-  position: sticky;
-  top: 0;
-  z-index: var(--z-navbar);
+  position: relative;
   background-color: var(--color-white);
-}
-
-.navbar-wrapper > .navbar-brand {
-  position: absolute;
-  top: 100%;
-  left: 0;
 }
 
 .navbar {
@@ -295,12 +287,13 @@
     position: static;
     display: flex;
     flex-direction: row;
-    height: auto;
+    height: auto !important;
     width: auto;
     justify-content: center;
     gap: var(--navbar-gap);
     border: none;
     padding: 0;
+    background-color: transparent;
   }
 
   .navbar-submenu-links {
@@ -314,7 +307,8 @@
     font-weight: var(--navbar-submenu-thick-weight);
   }
 
-  .navbar-submenu .navbar-brand {
+  .navbar-submenu .navbar-brand,
+  .navbar-submenu.active .navbar-brand {
     display: none;
   }
 

@@ -53,7 +53,7 @@
   --new-card-text-weight: var(--font-weight-black);
   --new-textbox-width: 342px;
   --new-textbox-min-height: 78px;
-  --new-textbox-align: left;
+  --new-textbox-align: center;
   --new-header-size: 14px;
   --new-header-weight: var(--font-weight-black);
   --new-text-size: 12px;
@@ -86,6 +86,7 @@
   --scrolling-icon-size: 85px;
   
   /* spacing */
+  --section-margin-y: 100px;
   --gap-xs: 4px;
   --gap-sm: 8px;
   --gap-md: 10px;
@@ -102,6 +103,7 @@
   --z-modal: 1500;
   --z-tooltip: 1100;
   --z-dropdown: 1150;
+  --z-text-card: 900
 }
 
 
@@ -148,5 +150,8 @@
     --scrolling-text-size: 60px;
     --scrolling-text-weight: var(--font-weight-black);
     --scrolling-icon-size: 85px;
+
+    /* spacing */
+    --section-margin-y: 80px;
   }
 }

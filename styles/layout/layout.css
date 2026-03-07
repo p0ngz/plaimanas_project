@@ -2,10 +2,13 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  overflow: auto;
+  background-color: var(--color-white);
 }
 
 .layout-header {
+  position: sticky;
+  top: 0;
+  z-index: var(--z-navbar);
   width: 100%;
 }
 
