@@ -1,1 +1,22 @@
 /* import all css here */
+/* base */
+@import url("./base/variable.css");
+@import url("./base/typography.css");
+
+/* layout */
+@import url("./layout/layout.css");
+@import url("./layout/container.css");
+
+/* components */
+@import url("./components/navbar.css");
+@import url("./components/hero.css");
+@import url("./components/new.css");
+@import url("./components/bestseller.css");
+@import url("./components/collection.css");
+@import url("./components/scrollingtext.css");
+@import url("./components/service.css");
+@import url("./components/inquiry.css");
+@import url("./components/footer.css");
+
+
+

@@ -1,31 +1,26 @@
-/* ================================
-   PLAIMANAS PROJECT - CSS VARIABLES
-   Based on mobile.txt and desktop.txt specifications
-   Best Practice: Mobile First Approach with Single Variable Names
-   ================================ */
-
 :root {
-  /* ===== Font Family ===== */
+
+  /* font family */
   --font-family: "Hanken Grotesk", sans-serif;
   
-  /* ===== Colors ===== */
+  /* colors */
   --color-primary: #000000;
   --color-white: #FFFFFF;
   --color-border: #000000;
   
-  /* ===== Breakpoints ===== */
+  /* breakpoints */
   --breakpoint-mobile: 390px;
   --breakpoint-desktop: 1440px;
   
-  /* ===== Font Weights ===== */
+  /* font weights */
   --font-weight-regular: 400;
   --font-weight-bold: 700;
   --font-weight-extra-bold: 800;
   --font-weight-black: 900;
   
   
-  /* ===== MOBILE FIRST (390px) ===== */
-  
+
+  /* mobile */  
   /* Container */
   --padding: 8px;
   
@@ -37,7 +32,8 @@
   --navbar-text-size: 13px;
   --navbar-text-padding: 10px;
   --navbar-submenu-size: 24px;
-  --navbar-submenu-weight: var(--font-weight-bold);
+  --navbar-submenu-weight: var(--font-weight-regular);
+  --navbar-submenu-thick-weight: var(--font-weight-bold);
   --navbar-icon-size: 17px;
   --navbar-icon-box: 20px;
   --navbar-left-box-width: 71px;
@@ -46,10 +42,10 @@
   --navbar-right-box-height: 36px;
   --navbar-right-padding: 10px;
   
-  /* Hero Section */
+  /* hero height */
   --hero-height: 713px;
   
-  /* New Section */
+  /* new section */
   --new-card-width: 282px;
   --new-card-height: 286px;
   --new-card-text-size: 40px;
@@ -62,7 +58,7 @@
   --new-text-size: 12px;
   --new-text-weight: var(--font-weight-regular);
   
-  /* Best Seller Section */
+  /* best seller section */
   --bestseller-card-width: 346px;
   --bestseller-card-height: 219px;
   --bestseller-card-text-size: 40px;
@@ -74,7 +70,7 @@
   --bestseller-text-size: 12px;
   --bestseller-text-weight: var(--font-weight-regular);
   
-  /* Collection Section */
+  /* collection section */
   --collection-width: 346px;
   --collection-min-height: 352px;
   --collection-card1-width: 346px;
@@ -82,46 +78,47 @@
   --collection-card23-size: 161px;
   --collection-gap: 24px;
   
-  /* Scrolling Text Section */
+  /* scrolling text section */
   --scrolling-height: 85px;
   --scrolling-text-size: 24px;
   --scrolling-text-weight: var(--font-weight-extra-bold);
   --scrolling-icon-size: 85px;
   
-  /* ===== Spacing ===== */
+  /* spacing */
   --gap-xs: 4px;
   --gap-sm: 8px;
   --gap-md: 10px;
   --gap-lg: 24px;
   --gap-xl: 68px;
   
-  /* ===== Transitions ===== */
+  /* transitions */
   --transition-fast: 150ms ease-in-out;
   --transition-base: 250ms ease-in-out;
   --transition-slow: 350ms ease-in-out;
   
-  /* ===== Z-index ===== */
+  /* z-index */
   --z-navbar: 1000;
-  --z-modal: 1050;
+  --z-modal: 1500;
   --z-tooltip: 1100;
+  --z-dropdown: 1150;
 }
 
 
-/* ===== DESKTOP RESPONSIVE (1440px) ===== */
+/* desktop */
 @media (min-width: 1440px) {
   :root {
-    /* Container */
+    /* container */
     --padding: 16px;
     
-    /* Navbar */
+    /* navbar */
     --navbar-padding: 8px;
     --navbar-gap: 10px;
     --navbar-text-padding: 10px;
     
-    /* Hero Section */
+    /* hero height */
     --hero-height: 844px;
     
-    /* New Section */
+    /* new section */
     --new-card-width: 566px;
     --new-card-height: 572px;
     --new-card-text-size: 80px;
@@ -130,7 +127,7 @@
     --new-header-size: 16px;
     --new-text-size: 14px;
     
-    /* Best Seller Section */
+    /* best seller section */
     --bestseller-card-width: 1200px;
     --bestseller-card-height: 759px;
     --bestseller-card-text-size: 80px;
@@ -138,7 +135,7 @@
     --bestseller-header-size: 16px;
     --bestseller-text-size: 14px;
     
-    /* Collection Section */
+    /* collection section */
     --collection-width: 978px;
     --collection-min-height: 352px;
     --collection-card1-width: 978px;
@@ -146,7 +143,7 @@
     --collection-card23-size: 455px;
     --collection-gap: 68px;
     
-    /* Scrolling Text Section */
+    /* scrolling text section */
     --scrolling-text-size: 60px;
     --scrolling-text-weight: var(--font-weight-black);
     --scrolling-icon-size: 85px;
