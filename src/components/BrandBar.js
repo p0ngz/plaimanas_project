@@ -1,3 +1,5 @@
+import scrollDrivenTypography from "../utils/scrollDrivenTypography.js";
+
 function BrandBar() {
   const brand = document.createElement("div");
   brand.className = "brandbar";
@@ -7,7 +9,7 @@ function BrandBar() {
     </svg>
   `;
 
-  // Auto-fit viewBox after font loads
+  // Auto-fit viewBox after font loads, then start scroll animation
   document.fonts.ready.then(() => {
     const text = brand.querySelector(".brandbar-text");
     if (!text) return;
@@ -18,6 +20,8 @@ function BrandBar() {
       "viewBox",
       `${bbox.x} ${bbox.y + trimY} ${bbox.width} ${bbox.height - trimY * 2}`,
     );
+
+    scrollDrivenTypography(brand, { minScale: 0.3 });
   });
 
   return brand;
