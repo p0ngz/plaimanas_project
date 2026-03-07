@@ -299,24 +299,29 @@
 
   .navbar-submenu-links {
     display: flex;
-    flex: 0;
     flex-direction: row;
     gap: var(--navbar-gap);
     padding: 0;
     align-items: center;
+  }
+  .navbar-submenu-links:hover {
+    font-weight: var(--navbar-submenu-thick-weight);
   }
 
   .navbar-submenu .navbar-brand {
     display: none;
   }
 
-  .navbar-wrapper > .navbar-brand {
-    display: none;
-  }
-
   .navbar-submenu-link {
     font-size: var(--navbar-text-size);
     font-weight: var(--font-weight-regular);
+    transition: var(--transition-fast);
+  }
+
+  .navbar-submenu-link:hover {
+    font-size: var(--navbar-submenu-size-desktop);
+    font-weight: var(--font-weight-bold);
+
   }
 
   /* Desktop: submenu group hover */
