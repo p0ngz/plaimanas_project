@@ -1,5 +1,9 @@
 :root {
+  /* breakpoints */
+  /* mobile =  390px */
+  /* desktop = 1440px */
   /* font family */
+  
   --font-family: "Hanken Grotesk", sans-serif;
 
   /* colors */
@@ -7,9 +11,7 @@
   --color-white: #ffffff;
   --color-border: #000000;
 
-  /* breakpoints */
-  --breakpoint-mobile: 390px;
-  --breakpoint-desktop: 1440px;
+  
 
   /* font weights */
   --font-weight-regular: 400;
@@ -79,6 +81,15 @@
   --collection-text-size-1: 30px;
   --collection-text-size-2: 18px;
   --collection-font-weight: var(--font-weight-black);
+
+  /* service section */
+  --service-section-gap: 48px;
+  --service-textbox-width: 280px;
+  --service-textbox-gap: 14px;
+  --service-header-size: 16px;
+  --service-header-weight: var(--font-weight-bold);
+  --service-text-size: 14px;
+  --service-text-weight: var(--font-weight-regular);
 
   /* scrolling text section */
   --scrolling-height: 85px;
@@ -154,6 +165,10 @@
     --scrolling-text-size: 60px;
     --scrolling-text-weight: var(--font-weight-black);
     --scrolling-icon-size: 85px;
+
+    /* service section */
+    --service-section-gap: 126px;
+    --service-textbox-gap: 14px;
 
     /* spacing */
     --section-margin-y: 80px;

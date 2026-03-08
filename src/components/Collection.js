@@ -1,5 +1,5 @@
 import Card from "./shared/Card.js";
-import { collectionData } from "../../data/collection.js";
+import { collectionData } from "../../data/collectionData.js";
 
 function Collection() {
   const section = document.createElement("div");

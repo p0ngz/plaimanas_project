@@ -18,7 +18,6 @@
 }
 
 .brandbar-text {
-  font-family: var(--font-family);
   font-weight: var(--font-weight-black);
   fill: white;
   font-size: 80px;

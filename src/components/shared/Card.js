@@ -67,7 +67,7 @@ function Card({
   if (label) {
     const labelSpan = document.createElement("span");
     labelSpan.className = labelClassName;
-    labelSpan.textContent = label;
+    labelSpan.textContent = label.toUpperCase();
     mediaContainer.appendChild(labelSpan);
   }
 

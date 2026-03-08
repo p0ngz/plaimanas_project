@@ -1,17 +1,17 @@
 export const collectionData = [
     {
-        label: "COLLECTION 01",
+        label: "Collection 01",
         image: "./assets/images/collection_1_1.jpg",
         // hoverImage: "./assets/images/collection_hover.jpg" 
     },
     {
-        label: "COLLECTION 02",
+        label: "Collection 02",
         image: "./assets/images/collection_2_1.jpg",
         hoverImage: "./assets/images/collection_hover.jpg" 
 
     },
     {
-        label: "COLLECTION 03",
+        label: "Collection 03",
         image: "./assets/images/collection_3_1.jpg",
         hoverImage: "./assets/images/collection_hover.jpg" 
     }

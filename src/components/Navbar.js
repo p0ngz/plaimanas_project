@@ -1,4 +1,4 @@
-import { navbarLanguage, navbarMenu } from "../../data/navbar.js";
+import { navbarLanguage, navbarMenu } from "../../data/navbarData.js";
 
 /**
  * Navbar Component
