@@ -1,29 +1,26 @@
 :root {
-
   /* font family */
   --font-family: "Hanken Grotesk", sans-serif;
-  
+
   /* colors */
   --color-primary: #000000;
-  --color-white: #FFFFFF;
+  --color-white: #ffffff;
   --color-border: #000000;
-  
+
   /* breakpoints */
   --breakpoint-mobile: 390px;
   --breakpoint-desktop: 1440px;
-  
+
   /* font weights */
   --font-weight-regular: 400;
   --font-weight-bold: 700;
   --font-weight-extra-bold: 800;
   --font-weight-black: 900;
-  
-  
 
-  /* mobile */  
+  /* mobile */
   /* Container */
   --padding: 8px;
-  
+
   /* Navbar */
   --navbar-height: 45px;
   --navbar-border: 1px solid var(--color-border);
@@ -42,10 +39,10 @@
   --navbar-right-box-width: 86px;
   --navbar-right-box-height: 36px;
   --navbar-right-padding: 10px;
-  
+
   /* hero height */
   --hero-height: 713px;
-  
+
   /* new section */
   --new-card-width: 282px;
   --new-card-height: 286px;
@@ -58,7 +55,7 @@
   --new-header-weight: var(--font-weight-black);
   --new-text-size: 12px;
   --new-text-weight: var(--font-weight-regular);
-  
+
   /* best seller section */
   --bestseller-card-width: 346px;
   --bestseller-card-height: 219px;
@@ -71,7 +68,7 @@
   --bestseller-text-size: 12px;
   --bestseller-text-weight: var(--font-weight-regular);
   --bestseller-textbox-align: center;
-  
+
   /* collection section */
   --collection-width: 346px;
   --collection-min-height: 352px;
@@ -79,13 +76,16 @@
   --collection-card1-height: 161px;
   --collection-card23-size: 161px;
   --collection-gap: 24px;
-  
+  --collection-text-size-1: 30px;
+  --collection-text-size-2: 18px;
+  --collection-font-weight: var(--font-weight-black);
+
   /* scrolling text section */
   --scrolling-height: 85px;
   --scrolling-text-size: 24px;
   --scrolling-text-weight: var(--font-weight-extra-bold);
   --scrolling-icon-size: 85px;
-  
+
   /* spacing */
   --section-margin-y: 100px;
   --gap-xs: 4px;
@@ -93,35 +93,34 @@
   --gap-md: 10px;
   --gap-lg: 24px;
   --gap-xl: 68px;
-  
+
   /* transitions */
   --transition-fast: 150ms ease-in-out;
   --transition-base: 250ms ease-in-out;
   --transition-slow: 350ms ease-in-out;
-  
+
   /* z-index */
   --z-navbar: 1000;
   --z-modal: 1500;
   --z-tooltip: 1100;
   --z-dropdown: 1150;
-  --z-text-card: 900
+  --z-text-card: 900;
 }
-
 
 /* desktop */
 @media (min-width: 1440px) {
   :root {
     /* container */
     --padding: 16px;
-    
+
     /* navbar */
     --navbar-padding: 8px;
     --navbar-gap: 50px;
     --navbar-text-padding: 10px;
-    
+
     /* hero height */
     --hero-height: 844px;
-    
+
     /* new section */
     --new-card-width: 566px;
     --new-card-height: 572px;
@@ -130,7 +129,7 @@
     --new-textbox-align: center;
     --new-header-size: 16px;
     --new-text-size: 14px;
-    
+
     /* best seller section */
     --bestseller-card-width: 1200px;
     --bestseller-card-height: 759px;
@@ -138,15 +137,19 @@
     --bestseller-textbox-width: 715px;
     --bestseller-header-size: 16px;
     --bestseller-text-size: 14px;
-    
+
     /* collection section */
     --collection-width: 978px;
     --collection-min-height: 352px;
     --collection-card1-width: 978px;
     --collection-card1-height: 455px;
     --collection-card23-size: 455px;
+
+    --collection-text-size-1: 60px;
+    --collection-text-size-2: 40px;
+    --collection-font-weight: var(--font-weight-black);
     --collection-gap: 68px;
-    
+
     /* scrolling text section */
     --scrolling-text-size: 60px;
     --scrolling-text-weight: var(--font-weight-black);

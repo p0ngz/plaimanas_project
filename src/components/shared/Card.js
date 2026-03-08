@@ -3,6 +3,7 @@
  * @param {Object} props
  * @param {string} [props.image] - Image source path
  * @param {string} [props.video] - Video source path (used instead of image when provided)
+ * @param {string} [props.hoverImage] - Hover image source (desktop only)
  * @param {string} props.label - Overlay label text
  * @param {string} props.title - Card title
  * @param {string} props.description - Card description
@@ -18,6 +19,7 @@
 function Card({
   image,
   video,
+  hoverImage,
   label,
   title,
   description,
@@ -49,30 +51,48 @@ function Card({
   } else if (image) {
     const img = document.createElement("img");
     img.src = image;
-    img.alt = title;
+    img.alt = title || "";
+    img.className = "card-media-default";
     mediaContainer.appendChild(img);
+
+    if (hoverImage) {
+      const hoverImg = document.createElement("img");
+      hoverImg.src = hoverImage;
+      hoverImg.alt = title ? `${title} hover` : "";
+      hoverImg.className = "card-media-hover";
+      mediaContainer.appendChild(hoverImg);
+    }
   }
 
-  const labelSpan = document.createElement("span");
-  labelSpan.className = labelClassName;
-  labelSpan.textContent = label;
-  mediaContainer.appendChild(labelSpan);
-
-  const textbox = document.createElement("div");
-  textbox.className = textboxClassName;
-
-  const h3 = document.createElement("h3");
-  h3.className = titleClassName;
-  h3.textContent = title;
-  textbox.appendChild(h3);
-
-  const p = document.createElement("p");
-  p.className = descriptionClassName;
-  p.textContent = description;
-  textbox.appendChild(p);
+  if (label) {
+    const labelSpan = document.createElement("span");
+    labelSpan.className = labelClassName;
+    labelSpan.textContent = label;
+    mediaContainer.appendChild(labelSpan);
+  }
 
   card.appendChild(mediaContainer);
-  card.appendChild(textbox);
+
+  if (title || description) {
+    const textbox = document.createElement("div");
+    textbox.className = textboxClassName;
+
+    if (title) {
+      const h3 = document.createElement("h3");
+      h3.className = titleClassName;
+      h3.textContent = title;
+      textbox.appendChild(h3);
+    }
+
+    if (description) {
+      const p = document.createElement("p");
+      p.className = descriptionClassName;
+      p.textContent = description;
+      textbox.appendChild(p);
+    }
+
+    card.appendChild(textbox);
+  }
 
   return card;
 }
