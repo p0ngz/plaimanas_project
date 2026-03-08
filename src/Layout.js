@@ -13,7 +13,7 @@ function Layout() {
   const newSection = createElement("section", { attrs: { id: "new-section" } });
   const bestsellerSection = createElement("section", { attrs: { id: "bestseller-section" } });
   const collectionSection = createElement("section", { attrs: { id: "collection-section" } });
-  const scrolltextSection = createElement("section", { attrs: { id: "scrolltext-section" } });
+  const marqueeSection = createElement("section", { attrs: { id: "marquee-section" } });
   const serviceSection = createElement("section", { attrs: { id: "service-section" } });
   const faqSection = createElement("section", { attrs: { id: "faq-section" } });
   const inquirySection = createElement("section", { attrs: { id: "inquiry-section" } });
@@ -22,7 +22,7 @@ function Layout() {
   main.appendChild(newSection);
   main.appendChild(bestsellerSection);
   main.appendChild(collectionSection);
-  main.appendChild(scrolltextSection);
+  main.appendChild(marqueeSection);
   main.appendChild(serviceSection);
   main.appendChild(faqSection);
   main.appendChild(inquirySection);
@@ -42,7 +42,7 @@ function Layout() {
     newSection,
     bestsellerSection,
     collectionSection,
-    scrolltextSection,
+    marqueeSection,
     serviceSection,
     faqSection,
     inquirySection,

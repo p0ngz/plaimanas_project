@@ -1,0 +1,4 @@
+.marquee-section {
+    margin: var(--section-margin-y);
+    width: 100%;
+}
