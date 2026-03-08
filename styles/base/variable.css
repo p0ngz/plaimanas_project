@@ -70,6 +70,7 @@
   --bestseller-header-weight: var(--font-weight-black);
   --bestseller-text-size: 12px;
   --bestseller-text-weight: var(--font-weight-regular);
+  --bestseller-textbox-align: center;
   
   /* collection section */
   --collection-width: 346px;
@@ -134,7 +135,7 @@
     --bestseller-card-width: 1200px;
     --bestseller-card-height: 759px;
     --bestseller-card-text-size: 80px;
-    --bestseller-textbox-width: 346px;
+    --bestseller-textbox-width: 715px;
     --bestseller-header-size: 16px;
     --bestseller-text-size: 14px;
     

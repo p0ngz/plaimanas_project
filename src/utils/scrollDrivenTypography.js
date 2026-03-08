@@ -1,13 +1,8 @@
-/**
- * Scroll-Driven Typography
- * Scales an element from full size (1) down to minScale
- * based on page scroll progress (top → bottom).
- *
- * @param {HTMLElement} element - Element to apply scaling to
- * @param {Object} [options]
- * @param {number} [options.minScale=0.3] - Minimum scale at full scroll (0–1)
- */
-export default function scrollDrivenTypography(element, { minScale = 0.3 } = {}) {
+// /**
+//  * @param {HTMLElement} element - Element to apply scaling to
+//  * @param {number} [minScale=0.3] - Minimum scale at full scroll (0–1)
+//  */
+export default function scrollDrivenTypography(element, minScale = 0.3) {
   let ticking = false;
 
   function update() {

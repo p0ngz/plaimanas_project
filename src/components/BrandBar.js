@@ -21,7 +21,7 @@ function BrandBar() {
       `${bbox.x} ${bbox.y + trimY} ${bbox.width} ${bbox.height - trimY * 2}`,
     );
 
-    scrollDrivenTypography(brand, { minScale: 0.3 });
+    scrollDrivenTypography(brand, 0.3);
   });
 
   return brand;

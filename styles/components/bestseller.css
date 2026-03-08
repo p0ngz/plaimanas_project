@@ -1,0 +1,62 @@
+.best-seller-section {
+  margin: var(--section-margin-y);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Card for BestSellerCard */
+.best-seller-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 0 var(--padding);
+}
+
+.best-seller-card-media {
+  position: relative;
+  width: var(--bestseller-card-width);
+  height: var(--bestseller-card-height);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.best-seller-card-media video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.best-seller-card-label {
+  z-index: var(--z-text-card);
+  color: var(--color-white);
+  font-size: var(--bestseller-card-text-size);
+  font-weight: var(--bestseller-card-text-weight);
+}
+
+.best-seller-card-textbox {
+  width: var(--bestseller-textbox-width);
+  min-height: var(--bestseller-textbox-min-height);
+  text-align: var(--bestseller-textbox-align);
+  margin-top: var(--gap-lg);
+}
+
+.best-seller-card-title {
+  font-size: var(--bestseller-header-size);
+  font-weight: var(--bestseller-header-weight);
+  margin: 0 0 var(--gap-sm) 0;
+}
+
+.best-seller-card-description {
+  font-size: var(--bestseller-text-size);
+  font-weight: var(--bestseller-text-weight);
+  margin: 0;
+  line-height: 1.5;
+}
