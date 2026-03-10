@@ -7,6 +7,7 @@ import BestSeller from "./components/BestSeller.js";
 import Collection from "./components/Collection.js";
 import Service from "./components/Service.js";
 import Marquee from "./components/Marquee.js"
+import Faq from "./components/Faq.js";
 
 // Create layout structure
 const {
@@ -19,6 +20,7 @@ const {
   collectionSection,
   serviceSection,
   marqueeSection,
+  faqSection,
 } = Layout();
 
 const brandBar = BrandBar();
@@ -31,6 +33,8 @@ bestsellerSection.appendChild(BestSeller());
 collectionSection.appendChild(Collection());
 serviceSection.appendChild(Service());
 marqueeSection.appendChild(Marquee());
+faqSection.appendChild(Faq());
+
 
 // Mount layout to DOM
 document.getElementById("app").appendChild(layout);

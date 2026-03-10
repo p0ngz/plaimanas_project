@@ -1,0 +1,97 @@
+/* Accordion */
+.accordion {
+  border-bottom: 1px solid var(--color-white);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 16px 0;
+}
+
+.accordion-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+}
+
+.accordion-title {
+  font-size: 14px;
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+  color: var(--color-white);
+}
+
+.accordion-icon {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  transition: transform var(--transition-base);
+  color: var(--color-white);
+}
+
+.accordion-icon::before,
+.accordion-icon::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  background: var(--color-white);
+  height: 2px;
+  width: 12px;
+}
+
+.accordion-icon::before {
+  left: 1px;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.accordion-icon::after {
+  right: 1px;
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+.accordion--open .accordion-icon {
+  transform: rotate(-180deg);
+}
+
+.accordion-body {
+  display: grid;
+  grid-template-rows: 0fr;
+  overflow: hidden;
+  transition: grid-template-rows var(--transition-base);
+}
+
+.accordion--open .accordion-body {
+  grid-template-rows: 1fr;
+}
+
+.accordion-body > * {
+  overflow: hidden;
+}
+
+.accordion-titleAccordion {
+  font-size: 16px;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-white);
+}
+.accordion-content {
+  font-size: 12px;
+  font-weight: var(--font-weight-regular);
+  color: var(--color-white);
+  line-height: 1;
+  text-align: left;
+}
+
+@media (min-width: 1440px) {
+  .accordion-title {
+    font-size: 16px;
+  }
+
+  .accordion-content {
+    font-size: 14px;
+  }
+}
