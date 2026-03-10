@@ -1,9 +1,5 @@
 import { navbarLanguage, navbarMenu } from "../../data/navbarData.js";
 
-/**
- * Navbar Component
- * @param {HTMLElement} brandBar - BrandBar element (for toggle control on mobile)
- */
 function Navbar(brandBar) {
   const wrapper = document.createElement("div");
   wrapper.className = "navbar-wrapper";
@@ -11,7 +7,6 @@ function Navbar(brandBar) {
   const nav = document.createElement("nav");
   nav.className = "navbar";
 
-  // ── Template ──────────────────────────────────────────────
 
   nav.innerHTML = /* html */ `
     <div class="navbar-left">
@@ -82,11 +77,9 @@ function Navbar(brandBar) {
 
   wrapper.appendChild(nav);
 
-  // ── Helpers ───────────────────────────────────────────────
-
-  function fitSvgViewBox(svgTextEl) {
-    const svg = svgTextEl.closest("svg");
-    const bbox = svgTextEl.getBBox();
+  function fitSvgViewBox(svgText) {
+    const svg = svgText.closest("svg");
+    const bbox = svgText.getBBox();
     const trimY = bbox.height * 0.1;
     svg.setAttribute(
       "viewBox",
@@ -94,15 +87,13 @@ function Navbar(brandBar) {
     );
   }
 
-  // ── SVG ViewBox Auto-fit ──────────────────────────────────
-
   let submenuBrandFitted = false;
 
   document.fonts.ready.then(() => {
     wrapper.querySelectorAll(".navbar-brand-svg text").forEach(fitSvgViewBox);
   });
 
-  // ── Language Dropdown ────────────────────────────────────
+  // lang dropdown
 
   const languageBtn = nav.querySelector(".navbar-language");
   const dropdownMenu = nav.querySelector(".navbar-dropdown-menu");
@@ -136,7 +127,7 @@ function Navbar(brandBar) {
     dropdownMenu.classList.toggle("active");
   });
 
-  // ── Mobile Menu Toggle ──────────────────────────────────
+  // mobile toggle
 
   const menuBtn = nav.querySelector(".navbar-menu-btn");
   const submenu = nav.querySelector(".navbar-submenu");
@@ -158,8 +149,7 @@ function Navbar(brandBar) {
     }
   });
 
-  // ── Desktop Resize Reset ────────────────────────────────
-
+  // desktop resize reset
   window.addEventListener("resize", () => {
     if (window.innerWidth >= 1440) {
       submenu.classList.remove("active");
@@ -168,8 +158,7 @@ function Navbar(brandBar) {
     }
   });
 
-  // ── Submenu Sublinks Toggle (Mobile) ────────────────────
-
+  // submenu sublinks toggle (mobile)
   nav.querySelectorAll(".navbar-submenu-toggle").forEach((toggle) => {
     toggle.addEventListener("click", (e) => {
       e.preventDefault();
