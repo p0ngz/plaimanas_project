@@ -3,15 +3,13 @@
   /* mobile =  390px */
   /* desktop = 1440px */
   /* font family */
-  
+
   --font-family: "Hanken Grotesk", sans-serif;
 
   /* colors */
   --color-primary: #000000;
   --color-white: #ffffff;
   --color-border: #000000;
-
-  
 
   /* font weights */
   --font-weight-regular: 400;
@@ -92,10 +90,12 @@
   --service-text-weight: var(--font-weight-regular);
 
   /* scrolling text section */
-  --scrolling-height: 85px;
-  --scrolling-text-size: 24px;
-  --scrolling-text-weight: var(--font-weight-extra-bold);
-  --scrolling-icon-size: 85px;
+  --marquee-height: 85px;
+  --marquee-text-size: 31px;
+  --marquee-text-weight: var(--font-weight-extra-bold);
+  --marquee-icon-size: 50px;
+  --marquee-padding: 16px 0;
+  --marque-gap: var(--gap-xl);
 
   /* spacing */
   --section-margin-y: 100px;
@@ -162,9 +162,10 @@
     --collection-gap: 68px;
 
     /* scrolling text section */
-    --scrolling-text-size: 60px;
-    --scrolling-text-weight: var(--font-weight-black);
-    --scrolling-icon-size: 85px;
+    --marquee-text-size: 60px;
+    --marquee-text-weight: var(--font-weight-black);
+    --marquee-icon-size: 85px;
+    --marque-gap: 100px;
 
     /* service section */
     --service-section-gap: 126px;

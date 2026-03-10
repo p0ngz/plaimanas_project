@@ -1,4 +1,97 @@
 .marquee-section {
-    margin: var(--section-margin-y);
-    width: 100%;
+  margin: var(--section-margin-y) 0;
+  width: 100%;
+  overflow: hidden;
+  background: var(--color-primary);
+  padding: var(--marquee-padding);
 }
+
+.marquee-track {
+  display: flex;
+  gap: var(--gap-lg);
+  width: max-content;
+  animation: marquee-scroll 15s linear infinite;
+}
+
+.marquee-group {
+  display: flex;
+  align-items: center;
+  gap: var(--marque-gap);
+  flex-shrink: 0;
+}
+
+.marquee-text {
+  font-size: var(--marquee-text-size);
+  font-weight: var(--marquee-text-weight);
+  color: var(--color-white);
+  white-space: nowrap;
+}
+
+.marquee-left-arrow,
+.marquee-right-arrow {
+  width: var(--marquee-icon-size);
+  height: var(--marquee-icon-size);
+  flex-shrink: 0;
+  background: var(--color-white);
+}
+
+.marquee-left-arrow {
+  clip-path: polygon(
+    0% 37.5%,
+    12.5% 37.5%,
+    12.5% 25%,
+    25% 25%,
+    25% 12.5%,
+    37.5% 12.5%,
+    37.5% 0%,
+    50% 0%,
+    50% 37.5%,
+    100% 37.5%,
+    100% 62.5%,
+    50% 62.5%,
+    50% 100%,
+    37.5% 100%,
+    37.5% 87.5%,
+    25% 87.5%,
+    25% 75%,
+    12.5% 75%,
+    12.5% 62.5%,
+    0% 62.5%
+  );
+}
+
+.marquee-right-arrow {
+  clip-path: polygon(
+    100% 37.5%,
+    87.5% 37.5%,
+    87.5% 25%,
+    75% 25%,
+    75% 12.5%,
+    62.5% 12.5%,
+    62.5% 0%,
+    50% 0%,
+    50% 37.5%,
+    0% 37.5%,
+    0% 62.5%,
+    50% 62.5%,
+    50% 100%,
+    62.5% 100%,
+    62.5% 87.5%,
+    75% 87.5%,
+    75% 75%,
+    87.5% 75%,
+    87.5% 62.5%,
+    100% 62.5%
+  );
+}
+
+@keyframes marquee-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
