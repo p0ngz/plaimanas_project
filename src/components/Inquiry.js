@@ -127,7 +127,12 @@ function createInquiryForm() {
   fieldGroup.appendChild(createInput("Email*", "email"));
   fieldGroup.appendChild(createInput("Phone Number*", "tel"));
 
-  const selectWrapper = createSelect("", ["General Inquiry", "Partnership", "Support", "Other"]);
+  const selectWrapper = createSelect("", [
+    "General Inquiry",
+    "Partnership",
+    "Support",
+    "Other",
+  ]);
   fieldGroup.appendChild(selectWrapper);
 
   form.appendChild(fieldGroup);
@@ -148,11 +153,10 @@ function createInquiryForm() {
 
 function Inquiry() {
   const section = document.createElement("section");
-  section.className = "inquiry-section";
 
+  section.className = "inquiry-section";
   section.appendChild(createInquiryHeader());
   section.appendChild(createInquiryForm());
-
   return section;
 }
 

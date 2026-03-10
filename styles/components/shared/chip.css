@@ -4,8 +4,7 @@
   justify-content: center;
   padding: 8px 16px;
   border-radius: 300px;
-  border: 1px solid var(--color-white);
-  background: transparent;
+  background: var(--color-chip);
   color: var(--color-white);
   font-family: var(--font-family);
   font-size: 13px;

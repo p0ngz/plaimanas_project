@@ -2,7 +2,7 @@ export const collectionData = [
     {
         label: "Collection 01",
         image: "./assets/images/collection_1_1.jpg",
-        // hoverImage: "./assets/images/collection_hover.jpg" 
+        hoverVideo: "./assets/videos/bestseller_video.mp4"
     },
     {
         label: "Collection 02",

@@ -10,6 +10,9 @@
   --color-primary: #000000;
   --color-white: #ffffff;
   --color-border: #000000;
+  --color-gray: #999;
+  --color-footer: #F8F9F8;
+  --color-chip: #828282;
 
   /* font weights */
   --font-weight-regular: 400;
@@ -105,7 +108,7 @@
 
 
   /* spacing */
-  --section-margin-y: 100px;
+  --section-margin-y: 80px;
   --gap-xs: 4px;
   --gap-sm: 8px;
   --gap-md: 10px;
@@ -115,7 +118,7 @@
   /* transitions */
   --transition-fast: 150ms ease-in-out;
   --transition-base: 250ms ease-in-out;
-  --transition-slow: 350ms ease-in-out;
+  --transition-slow: 500ms ease-in-out;
 
   /* z-index */
   --z-navbar: 1000;
@@ -123,6 +126,7 @@
   --z-tooltip: 1100;
   --z-dropdown: 1150;
   --z-text-card: 900;
+  --z-homepage-button: 1200;
 }
 
 /* desktop */
@@ -179,6 +183,6 @@
     --service-textbox-gap: 14px;
 
     /* spacing */
-    --section-margin-y: 80px;
+    --section-margin-y: 120px;
   }
 }

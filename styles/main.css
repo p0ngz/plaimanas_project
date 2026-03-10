@@ -17,7 +17,7 @@
 @import url("./components/marquee.css");
 @import url("./components/service.css");
 @import url("./components/faq.css");
-@import url("./components/accordion.css");
+@import url("./components/shared/accordion.css");
 @import url("./components/inquiry.css");
 @import url("./components/footer.css");
 @import url("./components/shared/chip.css");

@@ -9,6 +9,8 @@ import Service from "./components/Service.js";
 import Marquee from "./components/Marquee.js"
 import Faq from "./components/Faq.js";
 import Inquiry from "./components/Inquiry.js"
+import Footer from "./components/Footer.js";
+
 // Create layout structure
 const {
   layout,
@@ -21,7 +23,8 @@ const {
   serviceSection,
   marqueeSection,
   faqSection,
-  inquirySection
+  inquirySection,
+  footer
 } = Layout();
 
 const brandBar = BrandBar();
@@ -36,6 +39,7 @@ serviceSection.appendChild(Service());
 marqueeSection.appendChild(Marquee());
 faqSection.appendChild(Faq());
 inquirySection.appendChild(Inquiry());
+footer.appendChild(Footer());
 
 
 // Mount layout to DOM

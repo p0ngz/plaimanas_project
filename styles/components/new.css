@@ -60,3 +60,10 @@
   margin: 0;
   line-height: 1.5;
 }
+
+
+@media (min-width: 1440px) {
+  .new-card-description {
+    width: 647px;
+  }
+}

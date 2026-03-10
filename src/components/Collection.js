@@ -12,6 +12,7 @@ function Collection() {
     const card = Card({
       image: item.image,
       hoverImage: item.hoverImage,
+      hoverVideo: item.hoverVideo,
       label: item.label,
       className:
         index === 0

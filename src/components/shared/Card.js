@@ -4,6 +4,7 @@
  * @param {string} [props.image] - Image source path
  * @param {string} [props.video] - Video source path (used instead of image when provided)
  * @param {string} [props.hoverImage] - Hover image source (desktop only)
+ * @param {string} [props.hoverVideo] - Hover video source (desktop only)
  * @param {string} props.label - Overlay label text
  * @param {string} props.title - Card title
  * @param {string} props.description - Card description
@@ -20,6 +21,7 @@ function Card({
   image,
   video,
   hoverImage,
+  hoverVideo,
   label,
   title,
   description,
@@ -61,6 +63,24 @@ function Card({
       hoverImg.alt = title ? `${title} hover` : "";
       hoverImg.className = "card-media-hover";
       mediaContainer.appendChild(hoverImg);
+    }
+
+    if (hoverVideo) {
+      const hoverVid = document.createElement("video");
+      hoverVid.src = hoverVideo;
+      hoverVid.loop = true;
+      hoverVid.muted = true;
+      hoverVid.playsInline = true;
+      hoverVid.className = "card-media-hover-video";
+      mediaContainer.appendChild(hoverVid);
+
+      mediaContainer.addEventListener("mouseenter", () => {
+        hoverVid.play();
+      });
+      mediaContainer.addEventListener("mouseleave", () => {
+        hoverVid.pause();
+        hoverVid.currentTime = 0;
+      });
     }
   }
 

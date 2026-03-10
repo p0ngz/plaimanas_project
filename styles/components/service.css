@@ -36,7 +36,5 @@
     align-items: flex-start;
   }
 
-  .service-card {
-    padding-top: var(--gap-lg);
-  }
+
 }
