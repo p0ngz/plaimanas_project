@@ -19,7 +19,7 @@
 
   /* mobile */
   /* Container */
-  --padding: 8px;
+  --padding: 24px;
 
   /* Navbar */
   --navbar-height: 45px;
@@ -89,13 +89,20 @@
   --service-text-size: 14px;
   --service-text-weight: var(--font-weight-regular);
 
-  /* scrolling text section */
+  /* marquee section */
   --marquee-height: 85px;
   --marquee-text-size: 31px;
   --marquee-text-weight: var(--font-weight-extra-bold);
   --marquee-icon-size: 50px;
   --marquee-padding: 16px 0;
   --marque-gap: var(--gap-xl);
+
+
+  /* inquiry section*/
+  --inquiry-header-text: 40px;
+  --inquiry-text: 14px;
+  --inquiry-button-text: 16px;
+
 
   /* spacing */
   --section-margin-y: 100px;
