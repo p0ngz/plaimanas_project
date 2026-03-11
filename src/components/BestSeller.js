@@ -1,4 +1,3 @@
-import Card from "./shared/Card.js";
 
 function BestSeller() {
   const section = document.createElement("div");
@@ -23,4 +22,3 @@ function BestSeller() {
   return section;
 }
 
-export default BestSeller;

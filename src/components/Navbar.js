@@ -1,4 +1,3 @@
-import { navbarLanguage, navbarMenu } from "../../data/navbarData.js";
 
 function Navbar(brandBar) {
   const wrapper = document.createElement("div");
@@ -184,4 +183,3 @@ function Navbar(brandBar) {
   return wrapper;
 }
 
-export default Navbar;

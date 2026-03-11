@@ -1,4 +1,4 @@
-import HomepageButton from "./shared/HomepageButton.js";
+
 const footerData = [
   {
     title: "ABOUT",
@@ -107,4 +107,3 @@ function Footer() {
   return section;
 }
 
-export default Footer;

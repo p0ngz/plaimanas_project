@@ -40,4 +40,3 @@ function Marquee() {
   return section;
 }
 
-export default Marquee;

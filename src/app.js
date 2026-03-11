@@ -1,16 +1,3 @@
-import Layout from "./Layout.js";
-import Navbar from "./components/Navbar.js";
-import BrandBar from "./components/BrandBar.js";
-import Hero from "./components/Hero.js";
-import New from "./components/New.js";
-import BestSeller from "./components/BestSeller.js";
-import Collection from "./components/Collection.js";
-import Service from "./components/Service.js";
-import Marquee from "./components/Marquee.js"
-import Faq from "./components/Faq.js";
-import Inquiry from "./components/Inquiry.js"
-import Footer from "./components/Footer.js";
-
 // Create layout structure
 const {
   layout,

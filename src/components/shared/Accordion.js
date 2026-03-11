@@ -40,4 +40,3 @@ function Accordion({ titleAccordion, content, open = false }) {
   return wrapper;
 }
 
-export default Accordion;

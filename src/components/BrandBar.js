@@ -1,4 +1,3 @@
-import scrollDrivenTypography from "../utils/scrollDrivenTypography.js";
 
 function BrandBar() {
   const brand = document.createElement("div");
@@ -27,4 +26,3 @@ function BrandBar() {
   return brand;
 }
 
-export default BrandBar;

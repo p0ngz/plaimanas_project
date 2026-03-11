@@ -1,4 +1,3 @@
-import { serviceData } from "../../data/serviceData.js";
 
 function Service() {
   const section = document.createElement("section");
@@ -24,4 +23,3 @@ function Service() {
   return section;
 }
 
-export default Service;

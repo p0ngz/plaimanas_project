@@ -1,5 +1,3 @@
-import Chip from "./shared/Chip.js";
-import Accordion from "./shared/Accordion.js";
 
 const questionData = {
   title: "Frequently Asked Questions",
@@ -149,4 +147,3 @@ function Faq() {
   return section;
 }
 
-export default Faq;

@@ -160,4 +160,3 @@ function Inquiry() {
   return section;
 }
 
-export default Inquiry;

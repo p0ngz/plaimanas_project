@@ -21,5 +21,3 @@ function createElement(tag, options={}) {
 
     return element;
 }
-
-export default createElement;

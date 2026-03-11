@@ -2,7 +2,7 @@
 //  * @param {HTMLElement} element - Element to apply scaling to
 //  * @param {number} [minScale=0.3] - Minimum scale at full scroll (0–1)
 //  */
-export default function scrollDrivenTypography(element, minScale = 0.3) {
+function scrollDrivenTypography(element, minScale = 0.3) {
   let ticking = false;
 
   function update() {

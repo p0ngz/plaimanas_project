@@ -1,4 +1,3 @@
-import createElement from "./utils/createElement.js";
 
 function Layout() {
   const layout = createElement("div", { class: "layout" });
@@ -50,4 +49,3 @@ function Layout() {
   };
 }
 
-export default Layout;

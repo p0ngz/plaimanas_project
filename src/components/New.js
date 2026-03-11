@@ -1,4 +1,3 @@
-import Card from "./shared/Card.js";
 
 function New() {
   const section = document.createElement("div");
@@ -22,4 +21,3 @@ function New() {
   return section;
 }
 
-export default New;

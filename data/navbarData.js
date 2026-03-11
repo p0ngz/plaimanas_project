@@ -1,8 +1,8 @@
-export const navbarLanguage = [
+const navbarLanguage = [
   { label: "Th - Thb", value: "th" },
   { label: "Us - Usd", value: "us" },
 ]
-export const navbarMenu = [
+const navbarMenu = [
   {
     label: "Women",
     link: "/women"

@@ -5,5 +5,3 @@ function HomepageButton() {
     button.textContent = "HOMEPAGE";
     return button;
 }
-
-export default HomepageButton;

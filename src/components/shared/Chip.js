@@ -10,5 +10,3 @@ function Chip({ text, className = "", active = false }) {
   chip.textContent = text.toUpperCase();
   return chip;
 }
-
-export default Chip;

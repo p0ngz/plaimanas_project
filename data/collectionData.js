@@ -1,4 +1,4 @@
-export const collectionData = [
+const collectionData = [
     {
         label: "Collection 01",
         image: "./assets/images/collection_1_1.jpg",

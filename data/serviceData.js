@@ -1,4 +1,4 @@
-export const serviceData = [
+const serviceData = [
   {
     title: "WorldWide Shipping",
     description:
