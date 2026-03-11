@@ -1,6 +1,6 @@
 
 const questionData = {
-  title: "Hello wrworld old Frequently Asked Questions",
+  title: "Frequently Asked Questions",
   description:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare, nisl non rhoncus commodo.",
   Category: [
