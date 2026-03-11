@@ -1,4 +1,3 @@
-/* BrandBar - sticky fullwidth brand text with blend mode */
 .brandbar {
   position: sticky;
   top: var(--navbar-height);

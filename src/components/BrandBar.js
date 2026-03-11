@@ -8,7 +8,7 @@ function BrandBar() {
     </svg>
   `;
 
-  // Auto-fit viewBox after font loads, then start scroll animation
+  // auto fit new box
   document.fonts.ready.then(() => {
     const text = brand.querySelector(".brandbar-text");
     if (!text) return;

@@ -220,7 +220,6 @@ option {
   opacity: 0.8;
 }
 
-/* Desktop */
 @media (min-width: 1440px) {
   .inquiry-section {
     flex-direction: row;

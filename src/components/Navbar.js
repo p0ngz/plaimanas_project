@@ -157,7 +157,7 @@ function Navbar(brandBar) {
     }
   });
 
-  // submenu sublinks toggle (mobile)
+  // submenu sublinks toggle for mobile
   nav.querySelectorAll(".navbar-submenu-toggle").forEach((toggle) => {
     toggle.addEventListener("click", (e) => {
       e.preventDefault();

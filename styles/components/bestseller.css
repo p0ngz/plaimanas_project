@@ -5,7 +5,6 @@
   align-items: center;
 }
 
-/* Card for BestSellerCard */
 .best-seller-card {
   display: flex;
   flex-direction: column;

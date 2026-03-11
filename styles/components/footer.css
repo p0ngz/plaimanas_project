@@ -6,14 +6,12 @@
   gap: 40px;
 }
 
-/* Link Grid - 2 col mobile, 4 col desktop */
 .footer-link-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px 24px;
 }
 
-/* Columns */
 .footer-column {
   display: flex;
   flex-direction: column;
@@ -48,7 +46,6 @@
   opacity: 0.6;
 }
 
-/* Newsletter */
 .footer-newsletter {
   display: flex;
   flex-direction: column;
@@ -104,7 +101,6 @@
   opacity: 0.8;
 }
 
-/* Copyright */
 .footer-copyright-container {
   display: flex;
   justify-content: space-between;
@@ -127,9 +123,6 @@
   .footer-grid-full {
     grid-column: span 1;
   }
-  .footer-newsletter-form {
-  }
-
   .footer-newsletter-btn {
     width: auto;
     padding: 14px 40px;

@@ -13,8 +13,6 @@
   background-color: var(--color-white);
 }
 
-/* ── Submenu Brand (inside mobile menu) ── */
-
 .navbar-brand {
   width: 100%;
   height: fit-content;
@@ -37,8 +35,6 @@
   fill: white;
   font-size: 80px;
 }
-
-/* ── Left: Language Dropdown ─────────────── */
 
 .navbar-left {
   display: flex;
@@ -77,8 +73,6 @@
   display: block;
 }
 
-/* ── Center: Hamburger + Submenu ────────── */
-
 .navbar-center {
   display: flex;
   justify-content: center;
@@ -114,7 +108,6 @@
   transform-origin: center;
 }
 
-/* Hamburger → X animation */
 .navbar-menu-btn.active .navbar-menu-line:nth-child(1) {
   transform: translateY(2.5px) rotate(45deg);
 }
@@ -122,8 +115,6 @@
 .navbar-menu-btn.active .navbar-menu-line:nth-child(2) {
   transform: translateY(-2.5px) rotate(-45deg);
 }
-
-/* ── Submenu (fullscreen mobile overlay) ── */
 
 .navbar-submenu {
   position: fixed;
@@ -161,8 +152,6 @@
   display: block;
 }
 
-/* ── Submenu Links ───────────────────────── */
-
 .navbar-submenu-link {
   font-size: var(--navbar-text-size);
   color: var(--color-primary);
@@ -182,8 +171,6 @@
 .navbar-submenu-link-thick:hover {
   opacity: 0.7;
 }
-
-/* submenu group */
 
 .navbar-submenu-group {
   display: flex;
@@ -215,7 +202,6 @@
   display: flex;
 }
 
-/* right navbar */
 .navbar-right {
   display: flex;
   align-items: center;
